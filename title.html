@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AlgoHub</title>
+
+<style>
+
+
+
+</style>
+
+  </head>
+  <body>
+    <div class="typing">
+        <h1></h1>
+      </div>
+      
+  </body>
+  <script>
+const text = document.querySelector('.typing h1');
+const words = ['Iset Camp', 'Algo Hub'];
+let wordIndex = 0;
+let letterIndex = 0;
+
+function type() {
+  if (letterIndex < words[wordIndex].length) {
+    text.textContent += words[wordIndex].charAt(letterIndex);
+    letterIndex++;
+    setTimeout(type, 200);
+  } else {
+    setTimeout(erase, 1000);
+  }
+}
+
+function erase() {
+  if (letterIndex > 0) {
+    text.textContent = words[wordIndex].substring(0, letterIndex - 1);
+    letterIndex--;
+    setTimeout(erase, 100);
+  } else {
+    wordIndex++;
+    if (wordIndex >= words.length) {
+      wordIndex = 0;
+    }
+    setTimeout(type, 500);
+  }
+}
+
+setTimeout(type, 1000);
+
+    </script>
+</html>

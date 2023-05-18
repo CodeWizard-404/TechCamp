@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TechCamp</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="flesh">
+            <img src="images/flesh.png" alt="fl">
+        </div>
+        <div class="logo-sb">
+            <img src="images/logo.png" alt="logo">
+            <h3>Learn To Code</h3>
+        </div>
+        <div class="navi">
+            <div class="nav-title">Menu</div>
+            <ul>
+                <a href="index.html">
+                    <li class="nav-list" id="a1">
+                        <img src="images/home.png" alt="logo">
+                        <span>Home</span>
+                    </li>
+                </a>
+                <a href="Profile.html">
+                    <li class="nav-list" id="a2">
+                        <img src="images/profile.png" alt="logo">
+                        <span>Profile</span>
+                    </li>
+                </a>
+                <a href="courses.html">
+                    <li class="nav-list" id="a3">
+                        <img src="images/courses.png" alt="logo">
+                        <span>Cources</span>
+                    </li>
+                </a>
+                <a href="#contact">
+                    <li class="nav-list " id="a4">
+                        <img src="images/contact.png" alt="logo">
+                        <span>Contact</span>
+                    </li>
+                </a>
+                <li class="nav-list " id="a5">
+                    <img src="images/about.png" alt="logo">
+                    <span>About Us</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--Login-->
+
+    <div id="blur">
+        <div class="sign" id="login">
+            <div class="box">
+                <img src="images/login.png" alt="login" class="log-img" />
+                <img src="images/close.png" alt="close" id="close" onclick="login_close()" />
+                <h2>SignIn</h2>
+                <br /><br />
+                <input type="email" name="adress" placeholder="Adress@gmail.com" /><br /><br />
+                <input type="password" name="pass" placeholder="PassWord" /><br />
+                <input type="button" value="Sign in" class="log_btn" onclick="sign_log_ok()" />
+                <input type="button" value="Sign up" class="log_btn" onclick="signup_open()" />
+                <hr class="ligne" />
+                <div class="log_logos">
+                    <img src="images/google_logo.png" alt="gg" />
+                    <img src="images/facebook_logo.png" alt="fb" />
+                    <img src="images/linkedin_logo.png" alt="li" />
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="blur">
+        <div class="sign" id="signup">
+            <div class="box">
+                <img src="images/login.png" alt="login" class="log-img" />
+                <img src="images/close.png" alt="close" id="close" onclick="signup_close()" />
+                <h2>SignUp</h2>
+                <br /><br />
+                <input type="text" name="name" placeholder="Name" /><br /><br />
+                <input type="text" name="lastname" placeholder="LastName" /><br /><br />
+                <input type="tel" name="tel" placeholder="+216--***-***" /><br /><br />
+                <input type="email" name="email" placeholder="Adress@gmail.com" /><br /><br />
+                <input type="password" name="pass" placeholder="PassWord" /><br /><br />
+                <input type="button" value="Sign up" class="log_btn" onclick="sign_log_ok()" />
+                <input type="button" value="Sign in" class="log_btn" onclick="login_open()" />
+            </div>
+        </div>
+    </div>
+    <div id="blur">
+        <div class="sign" id="msg">
+            <div class="box">
+                <img src="images/check-mark.png" alt="ok" class="log-img" />
+                <h2>Signed In</h2>
+                <br /><br />
+                <p>Login Successful !</p>
+                <input type="button" value="OK" class="log_btn" onclick="ok_click()" />
+            </div>
+        </div>
+    </div>
+
+    <!--Header------------------------------------------------------>
+
+    <header>
+        <img src="images/logo.png" class="logo" />
+        <div class="Text">
+            <h1>TechCamp</h1>
+            <p>&#9655; Learn The Language Of GODS &#9665;</p>
+            <div class="btn" id="btn">
+                <a href="#" onclick="login_open()"><span></span> Get Started</a>
+                <a href="Tips.html"><span></span> Find more</a>
+            </div>
+
+            <!--search-->
+
+            <div class="search">
+                <input type="text" class="search_bar" placeholder="Search" id="search_input" />
+                <ul class="search_list" id="data_list">
+                    <li class="search_data_list"><a href="courses.html">HTML</a></li>
+                    <li class="search_data_list"><a href="courses.html">CSS</a></li>
+                    <li class="search_data_list"><a href="courses.html">JS</a></li>
+                    <li class="search_data_list"><a href="courses.html">React</a></li>
+                    <li class="search_data_list"><a href="courses.html">PHP</a></li>
+                    <li class="search_data_list"><a href="courses.html">Vue</a></li>
+                    <li class="search_data_list"><a href="courses.html">Angular</a></li>
+                    <li class="search_data_list"><a href="courses.html">BootStrap</a></li>
+                    <li class="search_data_list"><a href="courses.html">C</a></li>
+                    <li class="search_data_list"><a href="courses.html">C++</a></li>
+                    <li class="search_data_list"><a href="courses.html">C#</a></li>
+                    <li class="search_data_list"><a href="courses.html">JAVA</a></li>
+                    <li class="search_data_list"><a href="courses.html">Python</a></li>
+                    <li class="search_data_list"><a href="courses.html">Unity</a></li>
+                    <li class="search_data_list"><a href="courses.html">Ruby</a></li>
+                    <li class="search_data_list"><a href="courses.html">LUA</a></li>
+                    <li class="search_data_list"><a href="courses.html">GO</a></li>
+                    <li class="search_data_list"><a href="courses.html">Rust</a></li>
+                    <li class="search_data_list"><a href="courses.html">Scala</a></li>
+                    <li class="search_data_list"><a href="courses.html">Kotlin</a></li>
+                    <li class="search_data_list"><a href="courses.html">Swift</a></li>
+                    <li class="search_data_list"><a href="courses.html">Dart</a></li>
+                    <li class="search_data_list"><a href="courses.html">Flutter</a></li>
+                    <li class="search_data_list"><a href="courses.html">Objective-C</a></li>
+                    <li class="search_data_list"><a href="courses.html">Android Studio</a></li>
+                    <li class="search_data_list"><a href="courses.html">R</a></li>
+                    <li class="search_data_list"><a href="courses.html">Julia</a></li>
+                    <li class="search_data_list"><a href="courses.html">Matlab</a></li>
+                    <li class="search_data_list"><a href="courses.html">SQL</a></li>
+                    <li class="search_data_list"><a href="courses.html">Haskall</a></li>
+                    <li class="search_data_list"><a href="courses.html">SAS</a></li>
+                    <li class="search_data_list"><a href="courses.html">Assembly</a></li>
+                    <li class="search_data_list"><a href="courses.html">Micro Python</a></li>
+                    <li class="search_data_list"><a href="courses.html">Linux</a></li>
+                    <li class="search_data_list"><a href="courses.html">Power Shell</a></li>
+                    <li class="search_data_list"><a href="courses.html">PhotShop</a></li>
+                    <li class="search_data_list"><a href="courses.html">Adobe Illustrator</a></li>
+                    <li class="search_data_list"><a href="courses.html">Adobe After Effect</a></li>
+                    <li class="search_data_list"><a href="courses.html">Adobe InDesgine</a></li>
+                    <li class="search_data_list"><a href="courses.html">Figma</a></li>
+                    <li class="search_data_list"><a href="courses.html">Canva</a></li>
+                    <li class="search_data_list"><a href="courses.html">Sketch</a></li>
+                    <li class="search_data_list"><a href="courses.html">Blender</a></li>
+                    <li class="search_data_list"><a href="courses.html">OQL</a></li>
+                    <li class="search_data_list"><a href="courses.html">Xquery</a></li>
+                    <li class="search_data_list"><a href="courses.html">Clojure</a></li>
+                    <li class="search_data_list"><a href="courses.html">Perl</a></li>
+                    <li class="search_data_list"><a href="courses.html">Ember</a></li>
+                    <li class="search_data_list"><a href="courses.html">Flash</a></li>
+                    <li class="search_data_list"><a href="courses.html">XML</a></li>
+                    <li class="search_data_list"><a href="courses.html">NodeJS</a></li>
+                    <li class="search_data_list"><a href="courses.html">MySQL</a></li>
+                    <li class="search_data_list"><a href="courses.html">MongoDB</a></li>
+                    <li class="search_data_list"><a href="courses.html">ORACLE</a></li>
+                    <li class="search_data_list"><a href="courses.html">PostgreSQL</a></li>
+                    <li class="search_data_list"><a href="courses.html">LINQ</a></li>
+                    <li class="search_data_list"><a href="courses.html">STATA</a></li>
+                    <li class="search_data_list"><a href="courses.html">Knime</a></li>
+                    <li class="search_data_list"><a href="courses.html">BigQuery</a></li>
+                    <li class="search_data_list"><a href="courses.html">AlteryX</a></li>
+                    <li class="search_data_list"><a href="courses.html">Talend</a></li>
+                    <li class="search_data_list"><a href="courses.html">QuBole</a></li>
+                    <li class="search_data_list"><a href="courses.html">AWS</a></li>
+                    <li class="search_data_list"><a href="courses.html">Azure</a></li>
+                    <li class="search_data_list"><a href="courses.html">Digital Ocean</a></li>
+                    <li class="search_data_list"><a href="courses.html">Google Cloud</a></li>
+                    <li class="search_data_list"><a href="courses.html">Elk</a></li>
+                    <li class="search_data_list"><a href="courses.html">NGIX</a></li>
+                    <li class="search_data_list"><a href="courses.html">Alibaba Cloud</a></li>
+                    <li class="search_data_list"><a href="courses.html">LUMEN</a></li>
+
+
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <!--Menu
+
+    <div id="list">
+        <nav>
+            <ul>
+                <li><a href="index.html">> HOME</a></li>
+                <li><a href="Profile.html">> PROFILE</a></li>
+                <li><a href="courses.html">> COURCES</a></li>
+                <li><a href="#contact">> CONTACT</a></li>
+                <li><a href="#">> ABOUT US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="bare">
+        <img src="images/menu.png" alt="menu" id="menu" />
+    </div>
+    -->
+
+
+    <!--TECH SECTORS------------------------------------------------->
+
+    <section id="Section_I">
+        <div class="Section_Title">
+            <img src="images/code.png" alt="code" />
+            <p>Programing Types</p>
+            <h1>TECH SECTORS</h1>
+        </div>
+
+        <div class="Section_I_Article">
+            <div class="Article_Titles">
+                <h1>&#9655; Web Developpement</h1>
+                <div class="Sector">
+                    <div class="Sector_icon">
+                        <input type="image" src="images/web-developpement.png" alt="web" id="wdi" />
+                    </div>
+                    <div class="Sector_text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <h1>&#9655; Game Developpement</h1>
+                <div class="Sector">
+                    <div class="Sector_icon">
+                        <input type="image" src="images/game-development.png" alt="web" id="gdi" />
+                    </div>
+                    <div class="Sector_text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <h1>&#9655; Software Developpement</h1>
+                <div class="Sector">
+                    <div class="Sector_icon">
+                        <input type="image" src="images/software-developpement.png" alt="web" id="sdi" />
+                    </div>
+                    <div class="Sector_text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <h1>&#9655; Mobile Developpement</h1>
+                <div class="Sector">
+                    <div class="Sector_icon">
+                        <input type="image" src="images/mobile-development.png" alt="web" id="mdi" />
+                    </div>
+                    <div class="Sector_text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Article_Image" id="ai">
+                <img src="images/layers1.jpg" alt="prog" />
+            </div>
+
+            <div class="Article_Titles">
+                <h1>&#9655; Data Analysis</h1>
+                <div class="Sector">
+                    <div class="Sector_icon">
+                        <input type="image" src="images/data-analist.png" alt="web" id="dai" />
+                    </div>
+                    <div class="Sector_text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <h1>&#9655; Embaded System</h1>
+                <div class="Sector">
+                    <div class="Sector_icon">
+                        <input type="image" src="images/embaded-system.png" alt="web" id="esi" />
+                    </div>
+                    <div class="Sector_text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <h1>&#9655; Cyber security</h1>
+                <div class="Sector">
+                    <div class="Sector_icon">
+                        <input type="image" src="images/cyber-security.png" alt="web" id="csi" />
+                    </div>
+                    <div class="Sector_text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <h1>&#9655; Graphic Designe</h1>
+                <div class="Sector">
+                    <div class="Sector_icon">
+                        <input type="image" src="images/graphic-design.png" alt="web" id="gdei" />
+                    </div>
+                    <div class="Sector_text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sector_infos" id="wd">
+                <div class="box1">
+                    <br />
+                    <h2>Web-Dev</h2>
+                    <br /><br />
+                    <h3>To Master :</h3>
+                    <br />
+                    <table>
+                        <tr>
+                            <td><img src="images/c-logos/html.png" /></td>
+                            <td><img src="images/c-logos/css.png" /></td>
+                            <td><img src="images/c-logos/js.png" /></td>
+                            <td><img src="images/c-logos/react.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>HTML</p>
+                            </td>
+                            <td>
+                                <p>CSS</p>
+                            </td>
+                            <td>
+                                <p>JS</p>
+                            </td>
+                            <td>
+                                <p>React</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/c-logos/php.png" /></td>
+                            <td><img src="images/c-logos/vue.png" /></td>
+                            <td><img src="images/c-logos/angular.png" /></td>
+                            <td><img src="images/c-logos/bootstrap.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>PHP</p>
+                            </td>
+                            <td>
+                                <p>Vue</p>
+                            </td>
+                            <td>
+                                <p>Angular</p>
+                            </td>
+                            <td>
+                                <p>Boot<br>strap</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <br /><br />
+                    <h3>What is it :</h3>
+                    <br />
+                    <p>
+                        The creating, building, and maintaining of websites. It includes aspects such as <br> web
+                        design, web publishing, web programming, and database management.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="sector_infos" id="gd">
+                <div class="box1">
+                    <br />
+                    <h2>Game-Dev</h2>
+                    <br /><br />
+                    <h3>To Master :</h3>
+                    <br />
+                    <table>
+                        <tr>
+                            <td><img src="images/c-logos/c.png" /></td>
+                            <td><img src="images/c-logos/c++.png" /></td>
+                            <td><img src="images/c-logos/csharp.png" /></td>
+                            <td><img src="images/c-logos/java.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>C</p>
+                            </td>
+                            <td>
+                                <p>C++</p>
+                            </td>
+                            <td>
+                                <p>C#</p>
+                            </td>
+                            <td>
+                                <p>Java</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/c-logos/python.png" /></td>
+                            <td><img src="images/c-logos/unity.png" /></td>
+                            <td><img src="images/c-logos/ruby.png" /></td>
+                            <td><img src="images/c-logos/lua.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Python</p>
+                            </td>
+                            <td>
+                                <p>Unity</p>
+                            </td>
+                            <td>
+                                <p>Ruby</p>
+                            </td>
+                            <td>
+                                <p>Lua</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <br /><br />
+                    <h3>What is it :</h3>
+                    <br />
+                    <p>
+                        The art of creating games and describes the design, development and release of a game. It may
+                        involve concept generation, design, build, test and release.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="sector_infos" id="sd">
+                <div class="box1">
+                    <br />
+                    <h2>Software-Dev</h2>
+                    <br /><br />
+                    <h3>To Master :</h3>
+                    <br />
+                    <table>
+                        <tr>
+                            <td><img src="images/c-logos/go.png" /></td>
+                            <td><img src="images/c-logos/ruby.png" /></td>
+                            <td><img src="images/c-logos/rust.png" /></td>
+                            <td><img src="images/c-logos/java.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>GO</p>
+                            </td>
+                            <td>
+                                <p>Ruby</p>
+                            </td>
+                            <td>
+                                <p>Rust</p>
+                            </td>
+                            <td>
+                                <p>Java</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/c-logos/csharp.png" /></td>
+                            <td><img src="images/c-logos/c++.png" /></td>
+                            <td><img src="images/c-logos/scale.png" /></td>
+                            <td><img src="images/c-logos/python.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>C#</p>
+                            </td>
+                            <td>
+                                <p>C++</p>
+                            </td>
+                            <td>
+                                <p>Scale</p>
+                            </td>
+                            <td>
+                                <p>Python</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <br /><br />
+                    <h3>What is it :</h3>
+                    <br />
+                    <p>
+                        The collective processes involved in creating software programs, embodying all the stages
+                        throughout the systems development life cycle (SDLC). design, documentation, programming,
+                        testing, and ongoing maintenance..
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="sector_infos" id="md">
+                <div class="box1">
+                    <br />
+                    <h2>Mobile-Dev</h2>
+                    <br /><br />
+                    <h3>To Master :</h3>
+                    <br />
+                    <table>
+                        <tr>
+                            <td><img src="images/c-logos/java.png" /></td>
+                            <td><img src="images/c-logos/kotlin.png" /></td>
+                            <td><img src="images/c-logos/swift.png" /></td>
+                            <td><img src="images/c-logos/dart.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Java</p>
+                            </td>
+                            <td>
+                                <p>Kotlin</p>
+                            </td>
+                            <td>
+                                <p>Swift</p>
+                            </td>
+                            <td>
+                                <p>Dart</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/c-logos/flutter.png" /></td>
+                            <td><img src="images/c-logos/python.png" /></td>
+                            <td><img src="images/c-logos/objectc.png" /></td>
+                            <td><img src="images/c-logos/and-std.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Flutter</p>
+                            </td>
+                            <td>
+                                <p>Python</p>
+                            </td>
+                            <td>
+                                <p>Obej-c</p>
+                            </td>
+                            <td>
+                                <p>Android<br>Studio</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <br /><br />
+                    <h3>What is it :</h3>
+                    <br />
+                    <p>
+                        The process of creating software applications that run on a mobile device, and a typical mobile
+                        application utilizes a network connection to work with remote computing resources.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="sector_infos" id="da">
+                <div class="box1">
+                    <br />
+                    <h2>Data</h2>
+                    <br /><br />
+                    <h3>To Master :</h3>
+                    <br />
+                    <table>
+                        <tr>
+                            <td><img src="images/c-logos/r.png" /></td>
+                            <td><img src="images/c-logos/java.png" /></td>
+                            <td><img src="images/c-logos/julia.png" /></td>
+                            <td><img src="images/c-logos/matlab.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>R</p>
+                            </td>
+                            <td>
+                                <p>Java</p>
+                            </td>
+                            <td>
+                                <p>Julia</p>
+                            </td>
+                            <td>
+                                <p>Matlab</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/c-logos/python.png" /></td>
+                            <td><img src="images/c-logos/sql.jpg" /></td>
+                            <td><img src="images/c-logos/Haskell.png" /></td>
+                            <td><img src="images/c-logos/sas.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Python</p>
+                            </td>
+                            <td>
+                                <p>SQL</p>
+                            </td>
+                            <td>
+                                <p>Haskell</p>
+                            </td>
+                            <td>
+                                <p>SAS</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <br /><br />
+                    <h3>What is it :</h3>
+                    <br />
+                    <p>
+                        The process of inspecting, cleansing, transforming, and modeling data with the goal of
+                        discovering useful information, informing conclusions, and supporting decision-making.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="sector_infos" id="es">
+                <div class="box1">
+                    <br />
+                    <h2>Emabdded</h2>
+                    <br /><br />
+                    <h3>To Master :</h3>
+                    <br />
+                    <table>
+                        <tr>
+                            <td><img src="images/c-logos/c.png" /></td>
+                            <td><img src="images/c-logos/c++.png" /></td>
+                            <td><img src="images/c-logos/python.png" /></td>
+                            <td><img src="images/c-logos/java.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>C</p>
+                            </td>
+                            <td>
+                                <p>C++</p>
+                            </td>
+                            <td>
+                                <p>Python</p>
+                            </td>
+                            <td>
+                                <p>Java</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/c-logos/assembly.png" /></td>
+                            <td><img src="images/c-logos/rust.png" /></td>
+                            <td><img src="images/c-logos/js.png" /></td>
+                            <td><img src="images/c-logos/mpyth.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Assembly</p>
+                            </td>
+                            <td>
+                                <p>Rust</p>
+                            </td>
+                            <td>
+                                <p>JS</p>
+                            </td>
+                            <td>
+                                <p>Micro<br>Python</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <br /><br />
+                    <h3>What is it :</h3>
+                    <br />
+                    <p>
+                        The programing of a microcontroller-based, software-driven, reliable, real-time control system,
+                        designed to perform a specific task. It can be thought of as a computer hardware system having
+                        software embedded in it.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="sector_infos" id="cs">
+                <div class="box1">
+                    <br />
+                    <h2>Security</h2>
+                    <br /><br />
+                    <h3>To Master :</h3>
+                    <br />
+                    <table>
+                        <tr>
+                            <td><img src="images/c-logos/linux.png" /></td>
+                            <td><img src="images/c-logos/c++.png" /></td>
+                            <td><img src="images/c-logos/python.png" /></td>
+                            <td><img src="images/c-logos/java.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Linux</p>
+                            </td>
+                            <td>
+                                <p>C++</p>
+                            </td>
+                            <td>
+                                <p>Python</p>
+                            </td>
+                            <td>
+                                <p>Java</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/c-logos/po_sh.png" /></td>
+                            <td><img src="images/c-logos/js.png" /></td>
+                            <td><img src="images/c-logos/sql.jpg" /></td>
+                            <td><img src="images/c-logos/php.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Power<br>shell</p>
+                            </td>
+                            <td>
+                                <p>JS</p>
+                            </td>
+                            <td>
+                                <p>SQL</p>
+                            </td>
+                            <td>
+                                <p>PHP</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <br /><br />
+                    <h3>What is it :</h3>
+                    <br />
+                    <p>
+                        The practice of defending computers, servers, mobile devices, electronic systems, networks, and
+                        data from malicious attacks. It's also known as information technology security or electronic
+                        information security.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="sector_infos" id="gde">
+                <div class="box1">
+                    <br />
+                    <h2>Graphic</h2>
+                    <br /><br />
+                    <h3>To Master :</h3>
+                    <br />
+                    <table>
+                        <tr>
+                            <td><img src="images/c-logos/p_s.png" /></td>
+                            <td><img src="images/c-logos/I_s.png" /></td>
+                            <td><img src="images/c-logos/a_e.png" /></td>
+                            <td><img src="images/c-logos/i_d.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Photo <br>Shop</p>
+                            </td>
+                            <td>
+                                <p>Illustrator</p>
+                            </td>
+                            <td>
+                                <p>After <br>Effect</p>
+                            </td>
+                            <td>
+                                <p>InDesgine</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/c-logos/figma.png" /></td>
+                            <td><img src="images/c-logos/canva.png" /></td>
+                            <td><img src="images/c-logos/sketch.png" /></td>
+                            <td><img src="images/c-logos/blender.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Figma</p>
+                            </td>
+                            <td>
+                                <p>Canva</p>
+                            </td>
+                            <td>
+                                <p>Sketch</p>
+                            </td>
+                            <td>
+                                <p>Blender</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <br /><br />
+                    <h3>What is it :</h3>
+                    <br />
+                    <p>
+                        The art and practice of planning and projecting ideas and experiences with visual and textual
+                        content. Applied art whose activity consists in projecting visual communications intended to
+                        transmit specific messages to social groups, with specific objectives.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SOFTWAR LAYERS------------------------------------------------->
+
+    <section id="Section_II">
+        <div class="Section_Title">
+            <img src="images/code.png" alt="code" />
+            <p>Description</p>
+            <h1>SOFTWAR LAYERS</h1>
+        </div>
+        <div class="Section_II_Article">
+            <div class="Article2_Image">
+                <img src="images/software.jpg" alt="prog" />
+            </div>
+            <div class="Article2_Titles">
+                <h1>&#9655; UI/UX</h1>
+                <div class="Sector">
+                    <div class="Sector_icon">
+                        <input type="image" src="images/UI_UX.png" alt="web" id="uii" />
+                    </div>
+                    <div class="Sector_text">
+                        <p>How Data is Showen</p>
+                    </div>
+                </div>
+                <h1>&#9655; API</h1>
+                <div class="Sector">
+                    <div class="Sector_icon">
+                        <input type="image" src="images/api.png" alt="web" id="apii" />
+                    </div>
+                    <div class="Sector_text">
+                        <p>How Data is Fetched</p>
+                    </div>
+                </div>
+                <h1>&#9655; DATABASE</h1>
+                <div class="Sector">
+                    <div class="Sector_icon">
+                        <input type="image" src="images/database.png" alt="web" id="dbi" />
+                    </div>
+                    <div class="Sector_text">
+                        <p>How Data is Stored</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Article2_Titles">
+                <h1>&#9655; LOGIC</h1>
+                <div class="Sector">
+                    <div class="Sector_icon">
+                        <input type="image" src="images/logic.png" alt="web" id="loi" />
+                    </div>
+                    <div class="Sector_text">
+                        <p>How Data is Processed</p>
+                    </div>
+                </div>
+                <h1>&#9655; HOSTING</h1>
+                <div class="Sector">
+                    <div class="Sector_icon">
+                        <input type="image" src="images/hosting.png" alt="web" id="hoi" />
+                    </div>
+                    <div class="Sector_text">
+                        <p>How Data Is Stored</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="layers_infos" id="ui">
+                <div class="box2">
+                    <br />
+                    <h3>To Master :</h3>
+                    <br />
+                    <table>
+                        <tr>
+                            <td><img src="images/c-logos/html.png" /></td>
+                            <td><img src="images/c-logos/css.png" /></td>
+                            <td><img src="images/c-logos/js.png" /></td>
+                            <td><img src="images/c-logos/php.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>HTML</p>
+                            </td>
+                            <td>
+                                <p>CSS</p>
+                            </td>
+                            <td>
+                                <p>JS</p>
+                            </td>
+                            <td>
+                                <p>PHP</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/c-logos/python.png" /></td>
+                            <td><img src="images/c-logos/react.png" /></td>
+                            <td><img src="images/c-logos/ember.png" /></td>
+                            <td><img src="images/c-logos/flash.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Python</p>
+                            </td>
+                            <td>
+                                <p>React</p>
+                            </td>
+                            <td>
+                                <p>Ember</p>
+                            </td>
+                            <td>
+                                <p>Flash</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <br /><br />
+                    <h3>What is it :</h3>
+                    <br />
+                    <p>
+                        UX design is the process of planning the experience a person has when they interact with a product. <br>
+                        UI designers are focused on visual touchpoints that let users interact with a product.
+                    </p>
+
+                </div>
+            </div>
+            <div class="layers_infos" id="api">
+                <div class="box2">
+                    <br />
+                    <h3>To Master :</h3>
+                    <br />
+                    <table>
+                        <tr>
+                            <td><img src="images/c-logos/perl.png" /></td>
+                            <td><img src="images/c-logos/Clojure.png" /></td>
+                            <td><img src="images/c-logos/scale.png" /></td>
+                            <td><img src="images/c-logos/php.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Perl</p>
+                            </td>
+                            <td>
+                                <p>Clojure</p>
+                            </td>
+                            <td>
+                                <p>Scala</p>
+                            </td>
+                            <td>
+                                <p>PHP</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/c-logos/python.png" /></td>
+                            <td><img src="images/c-logos/java.png" /></td>
+                            <td><img src="images/c-logos/go.png" /></td>
+                            <td><img src="images/c-logos/nodejs.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Python</p>
+                            </td>
+                            <td>
+                                <p>Java</p>
+                            </td>
+                            <td>
+                                <p>GO</p>
+                            </td>
+                            <td>
+                                <p>NodeJS</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <br /><br />
+                    <h3>What is it :</h3>
+                    <br />
+                    <p>
+                        An application programming interface (API) is a way for two or more computer programs to communicate with each other. It is a type of software interface, offering a service to other pieces of software.A document or standard that describes how to build or use such a connection or interface is called an API specification.
+                    </p>
+
+                </div>
+            </div>
+            <div class="layers_infos" id="db">
+                <div class="box2">
+                    <br />
+                    <h3>To Master :</h3>
+                    <br />
+                    <table>
+                        <tr>
+                            <td><img src="images/c-logos/MySQL.png" /></td>
+                            <td><img src="images/c-logos/MongoDB.png" /></td>
+                            <td><img src="images/c-logos/Oracle.png" /></td>
+                            <td><img src="images/c-logos/Postgresql.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>MySQL</p>
+                            </td>
+                            <td>
+                                <p>MongoDB</p>
+                            </td>
+                            <td>
+                                <p>Oracle</p>
+                            </td>
+                            <td>
+                                <p>PostgreSQL</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/c-logos/xml.jpg" /></td>
+                            <td><img src="images/c-logos/linq.png" /></td>
+                            <td><img src="images/c-logos/oql.png" /></td>
+                            <td><img src="images/c-logos/xquery.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>XML</p>
+                            </td>
+                            <td>
+                                <p>LINQ</p>
+                            </td>
+                            <td>
+                                <p>OQL</p>
+                            </td>
+                            <td>
+                                <p>Xquery</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <br /><br />
+                    <h3>What is it :</h3>
+                    <br />
+                    <p>
+                        A database is information that is set up for easy access, management and updating. Computer databases typically store aggregations of data records or files that contain information, such as sales transactions, customer data, financials and product information.
+                    </p>
+
+                </div>
+            </div>
+            <div class="layers_infos" id="lo">
+                <div class="box2">
+                    <br />
+                    <h3>To Master :</h3>
+                    <br />
+                    <table>
+                        <tr>
+                            <td><img src="images/c-logos/sas.png" /></td>
+                            <td><img src="images/c-logos/stata.png" /></td>
+                            <td><img src="images/c-logos/knime.png" /></td>
+                            <td><img src="images/c-logos/bigquery.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>SAS</p>
+                            </td>
+                            <td>
+                                <p>Stata</p>
+                            </td>
+                            <td>
+                                <p>Knime</p>
+                            </td>
+                            <td>
+                                <p>BigQuery</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/c-logos/Oracle.png" /></td>
+                            <td><img src="images/c-logos/alteryx.png" /></td>
+                            <td><img src="images/c-logos/talend.png" /></td>
+                            <td><img src="images/c-logos/qubole.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Oracle</p>
+                            </td>
+                            <td>
+                                <p>AlteryX</p>
+                            </td>
+                            <td>
+                                <p>Talend</p>
+                            </td>
+                            <td>
+                                <p>QuBole</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <br /><br />
+                    <h3>What is it :</h3>
+                    <br />
+                    <p>
+                        Logic is the study of correct reasoning. It includes both formal and informal logic. Formal logic is the science of deductively valid inferences or of logical truths. It is a formal science investigating how conclusions follow from premises in a topic-neutral way.
+                    </p>
+
+                </div>
+            </div>
+            <div class="layers_infos" id="ho">
+                <div class="box2">
+                    <br />
+                    <h3>To Master :</h3>
+                    <br />
+                    <table>
+                        <tr>
+                            <td><img src="images/c-logos/aws.png" /></td>
+                            <td><img src="images/c-logos/azure.png" /></td>
+                            <td><img src="images/c-logos/digitalocean.png" /></td>
+                            <td><img src="images/c-logos/gg_cloud.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>AWS</p>
+                            </td>
+                            <td>
+                                <p>Azure</p>
+                            </td>
+                            <td>
+                                <p>Digital<br>Ocean</p>
+                            </td>
+                            <td>
+                                <p>Google<br>Cloud</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/c-logos/elk.png" /></td>
+                            <td><img src="images/c-logos/nginx.png" /></td>
+                            <td><img src="images/c-logos/alibaba.png" /></td>
+                            <td><img src="images/c-logos/lumend.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Elk</p>
+                            </td>
+                            <td>
+                                <p>Ngix</p>
+                            </td>
+                            <td>
+                                <p>Alibaba<br>Cloud</p>
+                            </td>
+                            <td>
+                                <p>Lumen</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <br /><br />
+                    <h3>What is it :</h3>
+                    <br />
+                    <p>
+                        Hosting, in its most generic sense, is a service through which storage and computing resources are providing to an individual or organization for the accommodation and maintenance of one or more websites and related services.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-------------------------------------------------------->
+
+    <footer id="contact">
+        <div class="Section_Title">
+            <img src="images/code.png" alt="code" />
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Catalog</a></li>
+                        <li><a href="#">Policyes</a></li>
+                        <li><a href="#">Programs</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Feautures</a></li>
+                        <li><a href="#">Accessibilty</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Payment</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Pay Here</h4>
+                    <ul>
+                        <li><a href="#">Learn</a></li>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Purches</a></li>
+                        <li><a href="#">Tech++</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Follow US</h4>
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a><br><br>
+                    <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.github.com"><i class="fab fa-github"></i></a>
+                    <a href="https://www.stackoverflow.com"><i class="fab fa-stack-overflow"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!--JS------------------------------------------------------------>
+<script src="script.js"></script>
+
+</html>
