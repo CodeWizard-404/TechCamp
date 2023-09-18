@@ -15,8 +15,8 @@ bare.onclick = function () {
 */
 
 
-const sidebar = document.querySelector('.sidebar');
-const flesh = document.querySelector('.flesh');
+var sidebar = document.querySelector('.sidebar');
+var flesh = document.querySelector('.flesh');
 flesh.onclick = function (){
     if (sidebar.className == 'sidebar'){
         sidebar.classList.add('open')
@@ -190,9 +190,9 @@ document.querySelector("#search_input").addEventListener("input", filterlist);
 var data_list = document.getElementById("data_list");
 
 function filterlist() {
-    const SearshInput = document.querySelector("#search_input");
-    const filter = SearshInput.value.toLowerCase();
-    const listItems = document.querySelectorAll(".search_data_list");
+    var SearshInput = document.querySelector("#search_input");
+    var filter = SearshInput.value.toLowerCase();
+    var listItems = document.querySelectorAll(".search_data_list");
 
     listItems.forEach((item) => {
         let text = item.textContent;
