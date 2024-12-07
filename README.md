@@ -1,5 +1,6 @@
 # **TechCamp: Your Ultimate IT Learning Hub** 🚀
 
+
 Welcome to **TechCamp**, an interactive educational platform designed to help you dive deep into the world of IT. Whether you're just starting out or looking to sharpen your skills, TechCamp provides tutorials, resources, and hands-on practice that will make learning engaging and effective.
 
 ## **Why TechCamp?**
